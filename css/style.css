@@ -423,3 +423,11 @@ height: 30px;
 .tasks-item.task-checked {
     background: #222222;
 }
+.game-board-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.game-board {
+    height: 65%;
+}
