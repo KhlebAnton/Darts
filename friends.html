@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+    <title>Darts</title>
+    <link href="./css/style.css?v=34891123" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="screen screen-friends">
+        <div class="screen-desc-container">
+            <div class="desc-wrapper">
+                <div class="screen-title">Пригласите друзей!</div>
+                <div class="screen-desc">Вы и ваши друзья получают бонусы и дополнительные монеты</div>
+            </div>
+            <div class="game-coin">100</div>
+        </div>
+        <div class="invite-info-items">
+            <div class="invite-info-item">
+                <div class="invite-info-item-title">
+                    Пригласить друзей <br>
+                    с Telegram Premium
+                </div>
+                <div class="game-coin">+ 20 000</div>
+            </div>
+            <div class="invite-info-item">
+                <div class="invite-info-item-title">
+                    Пригласить друзей
+                </div>
+                <div class="game-coin">+ 10 000</div>
+            </div>
+        </div>
+        <div class="friends-list-container">
+            <div class="friends-list-title">
+                <span>Ваши друзья (<span id="count-friends">2</span>):</span>
+            </div>
+            <div class="friends-items">
+                <div class="friends-item">
+                    <div class="friends-item-desc">
+                        <div class="friends-item-name">Name</div>
+                        <div class="friends-item-lvl">1/6</div>
+                    </div>
+                    <div class="game-coin">+ 100k</div>
+                </div>
+                <div class="friends-item">
+                    <div class="friends-item-desc">
+                        <div class="friends-item-name">Name</div>
+                        <div class="friends-item-lvl">1/6</div>
+                    </div>
+                    <div class="game-coin">+ 100k</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="btn-action btn-fixed-btm">Пригласить друга</div>
+        <div class="nav-menu-items">
+            <div class="nav-menu-item " onclick="window.location.href = './index.html'">
+                <div class="nav-menu-item-icon icon-game"></div>
+                <div class="nav-menu-item-title">Игра</div>
+            </div>
+            <div class="nav-menu-item">
+                <div class="nav-menu-item-icon icon-person"></div>
+                <div class="nav-menu-item-title">Команды</div>
+            </div>
+            <div class="nav-menu-item menu-item-active"  onclick="window.location.href = './friends.html'">
+                <div class="nav-menu-item-icon icon-star"></div>
+                <div class="nav-menu-item-title">Друзья</div>
+            </div>
+            <div class="nav-menu-item">
+                <div class="nav-menu-item-icon icon-rate"></div>
+                <div class="nav-menu-item-title">Рейтинг</div>
+            </div>
+            <div class="nav-menu-item" onclick="window.location.href = './tasks.html'">
+                <div class="nav-menu-item-icon icon-task"></div>
+                <div class="nav-menu-item-title">Задания</div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

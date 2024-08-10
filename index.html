@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+    <title>Darts</title>
+    <link href="./css/style.css?v=34891123" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="screen screen-game">
+        <div class="screen-title">Зарабатывайте монеты!</div>
+        <div class="screen-desc">Чем ближе к центру, тем больше выигрыш.</div>
+
+        <div class="game">
+            <div class="game-board">
+                <img class="game-board-img" src="./img/game-board.png" alt="">
+                <div class="game-dart dart-hint">
+                    <img class="game-dart-img" src="./img/dart.png" alt="">
+                </div>
+            </div>
+            
+            <div class="game-footer">
+                <div class="game-coin">100</div>
+            </div>
+            
+        </div>
+
+        <div class="nav-menu-items">
+            <div class="nav-menu-item menu-item-active">
+                <div class="nav-menu-item-icon icon-game"></div>
+                <div class="nav-menu-item-title">Игра</div>
+            </div>
+            <div class="nav-menu-item">
+                <div class="nav-menu-item-icon icon-person"></div>
+                <div class="nav-menu-item-title">Команды</div>
+            </div>
+            <div class="nav-menu-item" onclick="window.location.href = './friends.html'">
+                <div class="nav-menu-item-icon icon-star" ></div>
+                <div class="nav-menu-item-title">Друзья</div>
+            </div>
+            <div class="nav-menu-item">
+                <div class="nav-menu-item-icon icon-rate"></div>
+                <div class="nav-menu-item-title">Рейтинг</div>
+            </div>
+            <div class="nav-menu-item" onclick="window.location.href = './tasks.html'">
+                <div class="nav-menu-item-icon icon-task"></div>
+                <div class="nav-menu-item-title">Задания</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

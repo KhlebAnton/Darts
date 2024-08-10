@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+    <title>Darts</title>
+    <link href="./css/style.css?v=34891123" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="screen screen-tasks">
+        <div class="screen-desc-container">
+            <div class="desc-wrapper">
+                <div class="screen-title">Выполняйте задания</div>
+                <div class="screen-desc">Проходите задания и получайте дополнительные монеты.</div>
+            </div>
+            <div class="game-coin">100</div>
+        </div>
+
+        <div class="tasks-list-container">
+            <div class="tasks-list-title-wrapper">
+                <div class="tasks-list-title">Задания:</div>
+                <div class="tasks-list-title-count">
+                    <span>Выполнено: <span>2</span>/<span>3</span></span>
+                </div>
+            </div>
+            <div class="tasks-items">
+                <div class="tasks-item  task-checked">
+                    <div class="tasks-item-desc">
+                        <div class="tasks-item-icon icon-task-tg"></div>
+                        <div class="tasks-item-title">Подписаться на канал</div>
+                    </div>
+                    <div class="tasks-item-wrapper">
+                        <div class="game-coin">+ 1 000</div>
+                        <div class="tasks-item-check-icon"></div>
+                    </div>
+
+                </div>
+                <div class="tasks-item">
+                    <div class="tasks-item-desc">
+                        <div class="tasks-item-icon icon-task-tg"></div>
+                        <div class="tasks-item-title">Подписаться на канал</div>
+                    </div>
+                    <div class="tasks-item-wrapper">
+                        <div class="game-coin">+ 1 500</div>
+                        <div class="tasks-item-check-icon"></div>
+                    </div>
+                </div>
+                <div class="tasks-item">
+                    <div class="tasks-item-desc">
+                        <div class="tasks-item-icon icon-task-star"></div>
+                        <div class="tasks-item-title">Пригласить 2 новых друзей</div>
+                    </div>
+                    <div class="tasks-item-wrapper">
+                        <div class="game-coin">+ 2 500</div>
+                        <div class="tasks-item-check-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="nav-menu-items">
+            <div class="nav-menu-item " onclick="window.location.href = './index.html'">
+                <div class="nav-menu-item-icon icon-game"></div>
+                <div class="nav-menu-item-title">Игра</div>
+            </div>
+            <div class="nav-menu-item">
+                <div class="nav-menu-item-icon icon-person"></div>
+                <div class="nav-menu-item-title">Команды</div>
+            </div>
+            <div class="nav-menu-item " onclick="window.location.href = './friends.html'">
+                <div class="nav-menu-item-icon icon-star"></div>
+                <div class="nav-menu-item-title">Друзья</div>
+            </div>
+            <div class="nav-menu-item">
+                <div class="nav-menu-item-icon icon-rate"></div>
+                <div class="nav-menu-item-title">Рейтинг</div>
+            </div>
+            <div class="nav-menu-item menu-item-active" onclick="window.location.href = './tasks.html'">
+                <div class="nav-menu-item-icon icon-task"></div>
+                <div class="nav-menu-item-title">Задания</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        //check task
+
+        function checkTask(task) {
+            task.classList.add('task-check');
+            setTimeout(() => {
+                task.classList.remove('task-check');
+                task.classList.add('task-checked')
+            }, 2000)
+        }
+
+        const taskList = document.querySelectorAll('.tasks-item');
+
+        if (taskList) {
+            taskList.forEach((task) => {
+                task.addEventListener('click', () => checkTask(task));
+            })
+        }
+    </script>
+</body>
+
+</html>
